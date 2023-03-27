@@ -1,0 +1,2189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1 !important;
+}
+.clrfix {
+  clear: both;
+}
+.active {
+  color: rgb(58, 58, 167) !important;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.gap {
+  padding: 120px 0;
+}
+.btnss {
+  margin-top: 30px !important;
+  display: inline-block;
+  color: #22195e;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 47px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: double 2px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  align-items: center !important;
+}
+.btnss span {
+  padding: 20px 40px !important;
+}
+.btnss:hover {
+  background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  color: #fff;
+  box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.mt {
+  margin: 365px;
+}
+/* start headerSec Sec */
+.headerSec .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+.headerSec .navbar .navLinks a {
+  margin-right: 45px;
+  line-height: 100px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* end headerSec Sec */
+/* start homeCover Sec */
+.homeCover .coverContent {
+  background-image: url("../img/home-banner.png");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.homeCover .coverContent .coverImg {
+  width: 50%;
+  position: absolute;
+  bottom: 150px;
+  right: 100px;
+}
+.homeCover .coverContent .coverText {
+  width: 50%;
+  position: absolute;
+  left: 90px;
+  top: 200px;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+.homeCover .coverContent .coverText h2 {
+  margin-top: 0px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 54px;
+  margin-bottom: 20px;
+  font-family: "Rajdhani", sans-serif;
+}
+.homeCover .coverContent .coverText p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.homeCover .coverContent .coverText .coverTextBlocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+.homeCover .coverContent .coverText .coverTextBlocks .btns {
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-right: 30px;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 30px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.homeCover .coverContent .coverText .coverTextBlocks .btns:hover {
+  box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
+  border: 2px solid transparent;
+  background: #fff;
+  color: #222222;
+}
+.homeCover .coverContent .coverText .coverTextBlocks a {
+  position: relative;
+  box-sizing: content-box;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  margin-right: 20px;
+  background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+}
+.homeCover .coverContent .coverText .coverTextBlocks a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  border-radius: 50%;
+  animation: pulse-border 2000ms ease-out infinite;
+}
+.homeCover .coverContent .coverText .coverTextBlocks a::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  border-radius: 50%;
+  transition: all 200ms ease;
+}
+.homeCover .coverContent .coverText .coverTextBlocks a span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  top: 15px;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid #ffffff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+@keyframes pulse-border {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  }
+  20% {
+    width: 70px;
+    height: 70px;
+    opacity: 0.4;
+    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  }
+
+  40% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.2;
+    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  }
+
+  50% {
+    width: 90px;
+    height: 90px;
+    opacity: 0.1;
+    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  }
+
+  70% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.2;
+    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  }
+  90% {
+    width: 70px;
+    height: 70px;
+    opacity: 0.4;
+    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  }
+  100% {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+  }
+}
+/* end homeCover Sec */
+/* start featureSec Sec */
+.headerText {
+  text-align: center;
+  margin-bottom: 75px;
+  padding: 0 15px;
+  width: 60%;
+  margin: auto;
+}
+.headerText .last {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  color: #777777;
+  font-weight: 500;
+}
+.headerText h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 36px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+.headerText p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  color: #777777;
+  font-weight: 500;
+}
+.headerText .btn {
+  margin-top: 30px !important;
+  display: inline-block;
+  color: #22195e;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 47px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: double 2px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.headerText .btn:hover {
+  background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  color: #fff;
+  box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.headerText .btn span {
+  padding: 0 35px;
+}
+.featureSec .featureContent .featureItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+}
+.featureSec .featureContent .featureItems .imgItem {
+  width: 50%;
+}
+.featureSec .featureContent .featureItems .textList {
+  margin-left: 120px;
+  width: 50%;
+  margin-top: -30px;
+  padding: 0 30px;
+}
+.featureSec .featureContent .featureItems .textList .item {
+  padding: 30px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.featureSec .featureContent .featureItems .textList .item .Title {
+  display: flex;
+  margin-bottom: 15px;
+  position: relative;
+}
+.featureSec .featureContent .featureItems .textList .item .Title i {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  font-size: 30px;
+  color: #222222;
+}
+.featureSec .featureContent .featureItems .textList .item .Title h4 {
+  font-size: 20px;
+  color: #222222;
+  padding-left: 60px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.featureSec .featureContent .featureItems .textList .item .Title p {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777 !important;
+}
+/* end featureSec Sec */
+/* start designSec Sec */
+.designSec {
+  background-image: url("../img/tab-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 290px 0;
+}
+.designSec .designContent .designNav {
+  display: flex;
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom: 1px solid #eda2f0;
+  padding-bottom: 1px;
+}
+.designSec .designContent .designNav .boxNav {
+  flex: 0 0 25%;
+  max-width: 195px;
+  padding: 0px 15px;
+  margin-bottom: -1px;
+}
+.designSec .designContent .designNav .boxNav:hover .boxContent {
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  color: #fff;
+  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+  color: #fff;
+}
+.designSec .designContent .designNav .boxNav:hover .boxContent i {
+  background: linear-gradient(90deg, #fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.designSec .designContent .designNav .boxNav .boxContent {
+  background: #fff;
+  border: none;
+  padding: 25px 0px;
+  text-align: center;
+  line-height: 60px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+  cursor: pointer;
+}
+
+.designSec .designContent .designNav .boxNav .boxContent i {
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  transition: all 0.4s ease 0s;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.designSec .designContent .designNav .boxNav .active {
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  color: #fff !important;
+}
+.designSec .designContent .designNav .boxNav .active i {
+  background: linear-gradient(90deg, #fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.designSec .designContent .designNav .boxNav .active:hover i {
+  background: linear-gradient(90deg, #fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.designSec .designContent .designNav .boxNav .boxContent h6 {
+  letter-spacing: 1px;
+  margin-top: -10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.designSec .designContent .designInfo {
+  display: flex;
+  width: 100%;
+}
+.designSec .designContent .designInfo .headerText {
+  width: 50%;
+  text-align: left;
+  padding: 0 10px;
+}
+.last {
+  font-size: 14px;
+  position: relative;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.last::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 50px;
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  content: "";
+}
+.designSec .designContent .designInfo .imgItem {
+  width: 50%;
+  padding: 0 25px;
+}
+/* end designSec Sec */
+/* start specefictionSec Sec */
+.specefictionSec .specifiContent .specifiBox {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 70px;
+}
+.top-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  color: #777777;
+}
+.specefictionSec .specifiContent .specifiBox .imgItem {
+  width: 45%;
+  text-align: right;
+  padding: 0 70px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.specefictionSec .specifiContent .specifiBox .headerText {
+  width: 45%;
+  text-align: left;
+  padding: 0 120px;
+  position: relative;
+  margin-top: 0 !important;
+  right: 0;
+  top: 0;
+}
+.specefictionSec .specifiContent .specifiBox .centerBorder {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  flex-direction: column;
+  border: 1px dashed #dbdade;
+}
+.specefictionSec .specifiContent .specifiBox .shape1 {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 20px;
+  height: 24px;
+  margin-left: -8px;
+}
+.specefictionSec .specifiContent .specifiBox .shape2 {
+  position: absolute;
+  top: 47%;
+  width: 78px;
+  height: 80px;
+  left: 48%;
+  margin-left: -15px;
+}
+.specefictionSec .specifiContent .specifiBox .shape3 {
+  position: absolute;
+  top: 62%;
+  width: 20px;
+  height: 24px;
+  left: 50%;
+  margin-left: -9px;
+}
+.specefictionSec .specifiContent .specifiBox .headerLeft {
+  width: 45%;
+  padding: 0 !important;
+  position: relative;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  left: 0;
+  top: 0;
+}
+/* end specefictionSec Sec */
+/* start pricingSec Sec */
+.pricingSec {
+  background-image: url("../img/pricing-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pricingSec .headerText {
+  margin: 130px auto 70px;
+}
+.pricingSec .pricingBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.pricingSec .pricingBox .item {
+  text-align: center;
+  border: 2px solid #eeeeee;
+  border-radius: 5px;
+  background: #fff;
+  width: 32%;
+  max-width: 32%;
+  position: relative;
+  transition: all 0.4s ease 0s;
+}
+.pricingSec .pricingBox .item:hover {
+  background: #fcf8ff;
+  border: double 2px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.pricingSec .pricingBox .item .title {
+  text-align: center;
+  background: #ffffff;
+  padding: 35px 0px;
+  border-bottom: 1px solid #eeeeee;
+  transition: all 0.4s ease 0s;
+}
+.pricingSec .pricingBox .item:hover .title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+}
+.pricingSec .pricingBox .item .title h4 {
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 0px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.pricingSec .pricingBox .item .infoList {
+  padding: 30px 0px;
+  background: #fff;
+  transition: all 0.4s ease 0s;
+}
+.pricingSec .pricingBox .item:hover .infoList {
+  background: #fcf8ff;
+}
+.pricingSec .pricingBox .item .infoList li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  transition: all 0.4s ease 0s;
+}
+.pricingSec .pricingBox .item:hover ul li {
+  margin-bottom: 15px;
+}
+.pricingSec .pricingBox .item .price {
+  background: #fcf8ff;
+  max-width: 280px;
+  margin: 0px auto 40px;
+  border-radius: 5px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  transition: all 0.4s ease 0s;
+}
+.pricingSec .pricingBox .item:hover .price {
+  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+}
+.pricingSec .pricingBox .item .price h3 {
+  color: #222222;
+  font-size: 72px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 1.2;
+  transition: all 0.4s ease 0s;
+}
+.pricingSec .pricingBox .item:hover .price h3 {
+  color: #fff;
+}
+.pricingSec .pricingBox .item .price h3 span {
+  font-size: 24px;
+  vertical-align: top;
+  padding-top: 14px;
+  display: inline-block;
+  margin-right: -10px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+}
+.pricingSec .pricingBox .item .price .btnss {
+  display: inline-block;
+  color: #22195e;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 47px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: double 2px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: all 0.4s ease 0s;
+}
+.pricingSec .pricingBox .item .price .btnss:hover {
+  box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
+  border: 2px solid transparent;
+}
+.pricingSec .pricingBox .item:hover .price .btn {
+  background: #fff;
+  color: #222222;
+}
+.pricingSec .pricingBox .item .price .btn span {
+  padding: 0 35px;
+}
+/* end pricingSec Sec */
+/* start feedbackSec Sec */
+.feedbackSec .feedbackContent .reviewItems {
+  text-align: center;
+  margin-top: 80px;
+}
+.feedbackSec .feedbackContent .reviewItems .head h4 {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 18px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.feedbackSec .feedbackContent .reviewItems .head img {
+  width: 112px;
+  height: 99px;
+}
+.feedbackSec .feedbackContent .reviewItems .reviewIcon i {
+  color: #ffc000;
+  font-style: normal;
+  line-height: 1;
+  font-size: 14px;
+}
+.feedbackSec .feedbackContent .reviewItems .reviewText {
+  margin-top: 30px;
+}
+.feedbackSec .feedbackContent .reviewItems .reviewText p {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  color: #777777;
+}
+.feedbackSec .feedbackContent .reviewImgs {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.feedbackSec .feedbackContent .reviewImgs .imgItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.feedbackSec .feedbackContent .reviewImgs .item {
+  width: 170px;
+  height: 130;
+  background: #fcf8ff;
+  color: #777777;
+  text-align: center;
+  padding: 40px;
+}
+.feedbackSec .feedbackContent .reviewImgs .item img {
+  width: 80px;
+  height: 72.2px;
+  color: #777777;
+}
+/* end feedbackSec Sec */
+/* start footer Sec */
+.footerSec {
+  background-image: url("../img/impress-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  margin-bottom: 0 !important;
+}
+.footerSec .footerContent {
+  margin-bottom: 0 !important;
+}
+.footerSec .footerContent .headerText h2 {
+  color: #fff !important;
+  font-weight: bold;
+}
+.footerSec .footerContent .headerText p {
+  color: #fff !important;
+}
+.footerSec .footerContent .headerText .btnss {
+  background: #fff;
+  width: auto;
+  font-size: 14px;
+  box-shadow: -14.142px 14.142px 20px 0px rgb(0 0 0 / 10%);
+  border-color: #fff;
+}
+.footerSec .footerContent .headerText .btnss:hover {
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+}
+/* end footer Sec */
+/* start footerBottomSec Sec */
+.footerBottomSec {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 0 !important;
+  position: relative;
+  background-color: #fff;
+}
+.footerBottomSec .footerBottomContent .footerText {
+  display: flex;
+  justify-content: center;
+  margin-top: 0 !important;
+}
+.footerBottomSec .footerBottomContent .footerText .boxItem {
+  width: 40%;
+  margin-right: 30px;
+}
+.footerBottomSec .footerBottomContent .footerText .boxItem .copyright {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-weight: 500;
+}
+.footerBottomSec .footerBottomContent .footerText h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.footerBottomSec .footerBottomContent .footerText .middle {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-align: left;
+}
+.footerBottomSec .footerBottomContent .footerText .boxMessage {
+  width: 30%;
+  margin-right: 30px;
+}
+.footerBottomSec .footerBottomContent .footerText .boxMessage .inputMess {
+  position: relative;
+  width: 90%;
+  display: flex !important;
+  align-items: stretch;
+}
+.footerBottomSec .footerBottomContent .footerText .boxMessage .inputMess input {
+  height: 50px;
+  background: #fcf8ff;
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #cccccc;
+  outline: none;
+  box-shadow: none;
+}
+.footerBottomSec .footerBottomContent .footerText .boxMessage .inputMess .btnX {
+  position: absolute;
+  right: 4px;
+  /* top: -28px; */
+  top: 1px;
+  border-radius: 50px;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0px;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.footerBottomSec .footerBottomContent .footerText .boxIcon {
+  width: 25%;
+}
+.footerBottomSec .footerBottomContent .footerText .boxIcon .icons i {
+  margin-right: 17px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #cccccc;
+  transition: all 0.4s ease 0s;
+  background-color: transparent;
+  cursor: pointer;
+}
+.footerBottomSec .footerBottomContent .footerText .boxIcon .icons i:hover {
+  color: #8252fa;
+}
+/* end footerBottomSec Sec */
+/* -------------Feature Bage------------ */
+/* start featureCover Sec */
+.featureCover {
+  background-image: url("../img/common-banner.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.featureCover .featureText {
+  padding-top: 100px;
+}
+.featureCover .featureText p {
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.featureCover .featureText h2 {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  /* font-weight: bold; */
+}
+/* end featureCover Sec */
+/* start footerBg Sec */
+.footerBg {
+  background: #fcf8ff;
+}
+.footerBg .footerBottomContent .footerText .boxMessage .inputMess input {
+  background: #fff;
+}
+/* end footerBg Sec */
+/* -----------start Blog page-------- */
+/* start blogCart Sec */
+.blogCart .Box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0 !important;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.blogCart .Box .imgBox {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 10px;
+  width: 30%;
+}
+.blogCart .Box .imgBox:hover .overlay {
+  background: rgba(252, 248, 255, 0.85);
+  color: #000;
+}
+.blogCart .Box .imgBox:hover .overlay h5 {
+  color: #5a47d6;
+}
+.blogCart .Box .imgBox .overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blogCart .Box .imgBox .overlay h5 {
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+}
+.blogCart .Box .imgBox .overlay .borderLine {
+  margin: 10px 0px;
+  background: #fff;
+  width: 100%;
+  height: 1px;
+}
+.blogCart .Box .imgBox .overlay p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.4s ease 0s;
+}
+/* end blogCart Sec */
+/* start socialSec Sec */
+.socialSec .socialContent {
+  display: flex;
+  justify-content: center;
+}
+.socialSec .socialContent .main {
+  width: 68%;
+  margin-right: 10px;
+}
+.socialSec .socialContent .sidebar {
+  width: 28%;
+}
+.socialSec .socialContent .main .mainContent .box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.socialSec .socialContent .main .mainContent .box .boxLeft {
+  width: 20%;
+  position: absolute;
+  left: -75px;
+  top: 30px;
+}
+.socialSec .socialContent .main .mainContent .box .boxLeft p {
+  font-weight: 300;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Roboto", sans-serif;
+  color: #222222;
+  padding-bottom: 20px;
+}
+.socialSec .socialContent .main .mainContent .box .boxLeft ul li {
+  font-weight: 300;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  padding-bottom: 12px;
+  cursor: pointer;
+  position: relative;
+}
+.socialSec .socialContent .main .mainContent .box .boxLeft ul li:hover {
+  color: #a16af7;
+}
+.socialSec .socialContent .main .mainContent .box .boxLeft ul li i {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+}
+.socialSec .socialContent .main .mainContent .box .boxRight {
+  width: 80%;
+}
+.socialSec .socialContent .main .mainContent .box .boxRight .itemBox {
+  padding: 0 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.socialSec .socialContent .main .mainContent .box .boxRight .itemBox .imgBox {
+  margin-bottom: 20px;
+}
+.socialSec
+  .socialContent
+  .main
+  .mainContent
+  .box
+  .boxRight
+  .itemBox
+  .textBox
+  h2 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #222222;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.socialSec
+  .socialContent
+  .main
+  .mainContent
+  .box
+  .boxRight
+  .itemBox
+  .textBox
+  p {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+.socialSec
+  .socialContent
+  .main
+  .mainContent
+  .box
+  .boxRight
+  .itemBox
+  .textBox
+  button
+  span {
+  padding: 20px 40px;
+}
+.socialSec .socialContent .sidebar {
+  margin: 0 -30px;
+}
+.socialSec .socialContent .sidebar .sidebarContent {
+  background: #fcf8ff;
+  padding: 30px;
+  text-align: center;
+}
+.socialSec .socialContent .sidebar .sidebarContent .inputBox {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.socialSec .socialContent .sidebar .sidebarContent .inputBox input {
+  position: relative;
+  font-size: 14px;
+  line-height: 29px;
+  width: 100%;
+  font-weight: 300;
+  color: #777777;
+  border-radius: 45px;
+  z-index: 0;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding: 0;
+  text-indent: 20px;
+}
+.socialSec .socialContent .sidebar .sidebarContent .inputBox span i {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: 0px;
+  box-shadow: none;
+  font-weight: 600;
+  padding: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000000;
+}
+.socialSec .socialContent .sidebar .sidebarContent .borderLine {
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  margin: 30px 0px;
+}
+.socialSec .socialContent .sidebar .sidebarContent .infoBox {
+  text-align: center;
+}
+.socialSec .socialContent .sidebar .sidebarContent .infoBox .imgBox {
+  width: 50%;
+  margin: auto;
+}
+.socialSec .socialContent .sidebar .sidebarContent .infoBox .textBox h4 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #222222;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+}
+.socialSec .socialContent .sidebar .sidebarContent .infoBox .textBox p {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+.socialSec .socialContent .sidebar .sidebarContent .infoBox .textBox .boxIcon {
+  padding: 7px 0px 15px;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .infoBox
+  .textBox
+  .boxIcon
+  i {
+  font-size: 14px;
+  color: #222222;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .infoBox
+  .textBox
+  .boxIcon
+  i:hover {
+  color: #a16af7;
+}
+.socialSec .socialContent .sidebar .sidebarContent .header h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+}
+.socialSec .socialContent .sidebar .sidebarContent .itemsBox .posts .postBox {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .itemsBox
+  .posts
+  .postBox
+  .postImg {
+  width: 40%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .itemsBox
+  .posts
+  .postBox
+  .postText {
+  width: 55%;
+  text-align: left;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .itemsBox
+  .posts
+  .postBox
+  .postText
+  h3 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+  margin-bottom: 4px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .itemsBox
+  .posts
+  .postBox
+  .postText
+  h3:hover {
+  color: #a16af7;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .itemsBox
+  .posts
+  .postBox
+  .postText
+  p {
+  font-size: 12px;
+  line-height: 21px;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .category
+  .categoryItems
+  .item {
+  display: flex;
+  position: relative;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .category
+  .categoryItems
+  .item
+  .itemRight {
+  position: absolute;
+  right: 0;
+}
+.socialSec .socialContent .sidebar .sidebarContent .message .middle {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+.socialSec .socialContent .sidebar .sidebarContent .message .inputMessage {
+  margin-bottom: 8px;
+  display: flex;
+  position: relative;
+}
+.socialSec .socialContent .sidebar .sidebarContent .message .inputMessage i {
+  width: 3%;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  opacity: 0.8;
+  z-index: 3;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .message
+  .inputMessage
+  input {
+  width: 65%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .message
+  .inputMessage
+  input::placeholder {
+  padding-left: 15px;
+}
+.socialSec
+  .socialContent
+  .sidebar
+  .sidebarContent
+  .message
+  .inputMessage
+  .bbtns {
+  color: #fff;
+  font-size: 12px;
+  line-height: 38px;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 0;
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  width: 30%;
+}
+.socialSec .socialContent .sidebar .sidebarContent .message p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+.socialSec .socialContent .sidebar .sidebarContent .clouds ul li {
+  display: inline-block;
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 0px 13px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease 0s;
+  color: #222222;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+.socialSec .socialContent .sidebar .sidebarContent .clouds ul li:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+}
+/* end socialSec Sec */
+/* start footerBottomSec Sec */
+.blogFooter {
+  background-image: url("../img/footer-bg.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 290px;
+  padding-bottom: 120px;
+}
+.blogFooter .boxMessage .inputMess input {
+  background: #fff !important;
+}
+/* end footerBottomSec Sec */
+/* -----------Contact Page------ */
+/* start mapSec Sec */
+.mapSec .mapContent {
+  width: 100%;
+  height: 500px;
+  margin: 70px 0 !important;
+}
+/* start mapSec Sec */
+/* start contactUsSec Sec */
+.contactUsSec .contactContent {
+  display: flex;
+  /* justify-content: center; */
+  width: 100%;
+}
+.contactUsSec .contactContent .contactForm {
+  width: 40%;
+  padding-left: 30px;
+}
+.contactUsSec .contactContent .contactMessage {
+  width: 40%;
+}
+.contactUsSec .contactContent .contactInfo {
+  width: 20%;
+}
+.contactUsSec .contactContent .contactInfo .infoBox {
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+  padding-left: 45px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.contactUsSec .contactContent .contactInfo .infoBox .infoIcon i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contactUsSec .contactContent .contactInfo .infoBox h6 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #222222;
+  font-family: "Rajdhani", sans-serif;
+}
+.contactUsSec .contactContent .contactInfo .infoBox p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+.contactUsSec .contactContent .contactForm .form {
+  margin-bottom: 10px;
+}
+.contactUsSec .contactContent .contactForm .form input {
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  border: 1px solid #eeeeee;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0px;
+  padding-left: 20px;
+  display: block;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contactUsSec .contactContent .contactMessage {
+  margin-bottom: 150px;
+  padding-left: 30px;
+  position: relative;
+}
+.contactUsSec .contactContent .contactMessage textarea {
+  height: 134px;
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  border: 1px solid #eeeeee;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0px;
+  padding-left: 20px;
+  resize: none;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+.contactUsSec .contactContent .contactMessage .btn {
+  position: absolute;
+  right: 0;
+}
+.contactBg {
+  background-image: url("../img/footer-bg.png") !important;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 290px;
+  padding-bottom: 120px;
+}
+.contactBg .footerBottomContent .footerText .boxMessage .inputMess input {
+  background: #fff;
+}
+/* end contactUsSec Sec */
+
+/* -------------start Responsive---------- */
+/*  600 - 768 */
+@media screen and (max-width: 768px) {
+  .headerSec {
+    display: none !important;
+  }
+  .homeCover .coverContent {
+    height: 45vh;
+  }
+  .homeCover .coverContent .coverText {
+    text-align: left !important;
+    top: 50px;
+    left: 40px;
+    width: 80%;
+  }
+  .homeCover .coverContent .coverText h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .homeCover .coverContent .coverImg {
+    display: none;
+  }
+  .headerText {
+    width: 100%;
+  }
+  .headerText h2 {
+    font-size: 25px;
+  }
+  .featureSec {
+    padding: 0 !important;
+  }
+  .featureSec .featureItems {
+    display: block !important;
+  }
+  .featureSec .featureItems .imgItem {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .featureSec .featureItems .textList {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .designSec {
+    background: #fcf8ff !important;
+    padding: 70px 0 !important;
+  }
+  .designSec .designContent .designInfo {
+    display: block !important;
+    padding: 60px 0 !important;
+  }
+  .designSec .designContent .designInfo .headerText {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .designSec .designContent .designInfo .headerText h2 {
+    font-size: 36px !important;
+  }
+  .designSec .designContent .designInfo .imgItem {
+    width: 80%;
+    text-align: right !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 30px !important;
+  }
+  .specefictionSec .specifiContent .specifiBox {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 55px 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .imgItem {
+    display: block !important;
+    width: 100%;
+    margin: 55px 0;
+    padding: 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .centerBorder {
+    display: none;
+  }
+  .specefictionSec .specifiContent .specifiBox .shape {
+    display: none;
+  }
+  .specefictionSec .specifiContent .specifiBox .headerText {
+    display: block !important;
+    width: 100% !important;
+    text-align: left;
+    padding: 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .headerText h2 {
+    font-size: 36px !important;
+  }
+  .pricingSec {
+    background: #fcf8ff !important;
+    padding: 50px 0 !important;
+  }
+  .pricingSec .pricingContent .pricingBox {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pricingSec .pricingContent .pricingBox .item {
+    width: 48%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    margin-right: 8px;
+  }
+  .feedbackSec {
+    padding: 50px 0 !important;
+  }
+  .feedbackSec .feedbackContent .reviewImgs {
+    padding: 60px 0 !important;
+  }
+  .feedbackSec .feedbackContent .reviewImgs .imgItem {
+    flex-wrap: wrap;
+  }
+  .feedbackSec .feedbackContent .reviewImgs .imgItem .item {
+    width: 50%;
+  }
+  .footerSec {
+    background: #a16af7;
+    padding: 80px 0 !important;
+  }
+  .footerSec .footerContent .headerText {
+    width: 100%;
+  }
+  .footerSec .footerContent .headerText h2 {
+    font-size: 36px;
+  }
+  .footerBottomSec {
+    padding: 80px 0 !important;
+    background: #fcf8ff !important;
+  }
+  .footerBottomSec .footerBottomContent .footerText {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footerBottomSec .footerBottomContent .footerText .box {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .footerBottomSec
+    .footerBottomContent
+    .footerText
+    .boxMessage
+    .inputMess
+    input {
+    background: #fff;
+  }
+  .homeCover .coverText .btns {
+    display: none;
+  }
+  .homeCover .coverText h2 br {
+    display: none;
+  }
+  .homeCover .coverText p br {
+    display: none;
+  }
+  .blogCart .Box {
+    display: block;
+  }
+  .blogCart .Box .imgBox {
+    width: 70%;
+    padding: 0 !important;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .socialSec .socialContent {
+    display: block;
+  }
+  .socialSec .socialContent .main {
+    width: 100%;
+  }
+  .socialSec .socialContent .main .mainContent .box {
+    display: block;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxLeft {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxRight {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxRight .itemBox {
+    padding: 0 !important;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxRight .itemBox .imgBox {
+    width: 100%;
+  }
+  .socialSec
+    .socialContent
+    .main
+    .mainContent
+    .box
+    .boxRight
+    .itemBox
+    .textBox
+    h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .socialSec .socialContent .sidebar {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 40px !important;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxLeft ul li i {
+    position: relative;
+    padding-left: 20px;
+  }
+  .mapSec .mapContent {
+    width: 90%;
+  }
+  .contactUsSec .contactContent {
+    display: block;
+  }
+  .contactUsSec .contactContent .contactInfo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contactUsSec .contactContent .contactForm {
+    width: 100%;
+  }
+  .contactUsSec .contactContent .contactMessage {
+    width: 100%;
+  }
+  .contactUsSec .contactContent .contactForm {
+    padding: 0 !important;
+  }
+  .contactUsSec .contactContent .contactMessage {
+    padding: 0 !important;
+  }
+}
+
+/*1024 -   */
+@media screen and (max-width: 1024px) {
+  .headerSec {
+    display: none !important;
+  }
+  .homeCover .coverContent {
+    height: 45vh;
+  }
+  .homeCover .coverContent .coverText {
+    text-align: left !important;
+    top: 50px;
+    left: 40px;
+    width: 80%;
+  }
+  .homeCover .coverContent .coverText h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .homeCover .coverContent .coverImg {
+    display: none;
+  }
+  .headerText {
+    width: 100%;
+  }
+  .headerText h2 {
+    font-size: 36px;
+  }
+  .featureSec {
+    padding: 0 !important;
+  }
+  .featureSec .featureItems {
+    display: block !important;
+  }
+  .featureSec .featureItems .imgItem {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .featureSec .featureItems .textList {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .designSec {
+    background: #fcf8ff !important;
+    padding: 70px 0 !important;
+  }
+  .designSec .designContent .designInfo {
+    display: block !important;
+    padding: 60px 0 !important;
+  }
+  .designSec .designContent .designInfo .headerText {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .designSec .designContent .designInfo .headerText h2 {
+    font-size: 36px !important;
+  }
+  .designSec .designContent .designInfo .imgItem {
+    width: 80%;
+    text-align: right !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 30px !important;
+  }
+  .specefictionSec .specifiContent .specifiBox {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 55px 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .imgItem {
+    display: block !important;
+    width: 80%;
+    margin: 55px 0;
+    padding: 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .centerBorder {
+    display: none;
+  }
+  .specefictionSec .specifiContent .specifiBox .shape {
+    display: none;
+  }
+  .specefictionSec .specifiContent .specifiBox .headerText {
+    display: block !important;
+    width: 100% !important;
+    text-align: left;
+    padding: 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .headerText h2 {
+    font-size: 36px !important;
+  }
+  .pricingSec {
+    background: #fcf8ff !important;
+    padding: 50px 0 !important;
+  }
+  .pricingSec .pricingContent .pricingBox {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pricingSec .pricingContent .pricingBox .item {
+    width: 48%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    margin-right: 8px;
+  }
+  .feedbackSec {
+    padding: 50px 0 !important;
+  }
+  .feedbackSec .feedbackContent .reviewImgs {
+    padding: 60px 0 !important;
+  }
+  .feedbackSec .feedbackContent .reviewImgs .imgItem {
+    flex-wrap: wrap;
+  }
+  .feedbackSec .feedbackContent .reviewImgs .imgItem .item {
+    width: 50%;
+  }
+  .footerSec {
+    background: #a16af7;
+    padding: 80px 0 !important;
+  }
+  .footerSec .footerContent .headerText {
+    width: 100%;
+  }
+  .footerSec .footerContent .headerText h2 {
+    font-size: 36px;
+  }
+  .footerBottomSec {
+    padding: 80px 0 !important;
+    background: #fcf8ff !important;
+  }
+  .footerBottomSec .footerBottomContent .footerText {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footerBottomSec .footerBottomContent .footerText .box {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .footerBottomSec
+    .footerBottomContent
+    .footerText
+    .boxMessage
+    .inputMess
+    input {
+    background: #fff;
+  }
+  .homeCover .coverText .btns {
+    display: none;
+  }
+  .homeCover .coverText h2 br {
+    display: none;
+  }
+  .homeCover .coverText p br {
+    display: none;
+  }
+  .blogCart .Box {
+    display: block;
+  }
+  .blogCart .Box .imgBox {
+    width: 70%;
+    padding: 0 !important;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .socialSec .socialContent {
+    display: block;
+  }
+  .socialSec .socialContent .main {
+    width: 100%;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxLeft {
+    left: -60px;
+  }
+  .socialSec .socialContent .sidebar {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 40px !important;
+  }
+  .mapSec .mapContent {
+    width: 100%;
+  }
+  .contactUsSec {
+    margin-bottom: 70px;
+  }
+}
+/* 0--- 600 */
+@media screen and (max-width: 600px) {
+  .headerSec {
+    display: none !important;
+  }
+  .homeCover .coverContent {
+    height: 60vh;
+  }
+  .homeCover .coverContent .coverText {
+    text-align: left !important;
+    top: 50px;
+    left: 40px;
+    width: 80%;
+  }
+  .homeCover .coverContent .coverText h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .homeCover .coverContent .coverText .coverTextBlocks button {
+    display: none;
+  }
+  .homeCover .coverContent .coverImg {
+    display: none;
+  }
+  .headerText {
+    width: 100%;
+  }
+  .headerText h2 {
+    font-size: 25px;
+  }
+  .featureSec {
+    padding: 0 !important;
+  }
+  .featureSec .featureItems .imgItem {
+    display: none;
+  }
+  .featureSec .featureItems .textList {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .designSec {
+    background: #fcf8ff !important;
+    padding: 70px 0 !important;
+  }
+  .designSec .designContent .designNav .boxNav {
+    flex: 0 0 50%;
+    padding: 0 10px 20px;
+  }
+  .designSec .designContent .designNav .lastItem {
+    padding-bottom: 0 !important;
+  }
+  .designSec .designContent .designInfo {
+    display: block !important;
+    padding: 60px 0 !important;
+  }
+  .designSec .designContent .designInfo .headerText {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .designSec .designContent .designInfo .imgItem {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 30px !important;
+  }
+  .specefictionSec .specifiContent .specifiBox {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 55px 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .imgItem {
+    display: block !important;
+    width: 100%;
+    margin: 55px 0;
+    padding: 0 !important;
+  }
+  .specefictionSec .specifiContent .specifiBox .centerBorder {
+    display: none;
+  }
+  .specefictionSec .specifiContent .specifiBox .shape {
+    display: none;
+  }
+  .specefictionSec .specifiContent .specifiBox .headerText {
+    display: block !important;
+    width: 100% !important;
+    text-align: left;
+    padding: 0 !important;
+  }
+  .pricingSec {
+    background: #fcf8ff !important;
+    padding: 50px 0 !important;
+  }
+  .pricingSec .pricingContent .pricingBox {
+    display: block;
+  }
+  .pricingSec .pricingContent .pricingBox .item {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .feedbackSec {
+    padding: 50px 0 !important;
+  }
+  .feedbackSec .feedbackContent .reviewImgs {
+    padding: 60px 0 !important;
+  }
+  .feedbackSec .feedbackContent .reviewImgs .imgItem {
+    flex-wrap: wrap;
+  }
+  .feedbackSec .feedbackContent .reviewImgs .imgItem .item {
+    width: 50%;
+  }
+  .footerSec {
+    background: #a16af7;
+    padding: 80px 0 !important;
+  }
+  .footerSec .footerContent .headerText {
+    width: 100%;
+  }
+  .footerSec .footerContent .headerText h2 {
+    font-size: 36px;
+  }
+  .footerBottomSec {
+    padding: 80px 0 !important;
+    background: #fcf8ff !important;
+  }
+  .footerBottomSec .footerBottomContent .footerText {
+    display: block;
+  }
+  .footerBottomSec .footerBottomContent .footerText .box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footerBottomSec
+    .footerBottomContent
+    .footerText
+    .boxMessage
+    .inputMess
+    input {
+    background: #fff;
+  }
+  .homeCover .coverText h2 br {
+    display: none;
+  }
+  .homeCover .coverText p br {
+    display: none;
+  }
+  .blogCart .Box {
+    display: block;
+  }
+  .blogCart .Box .imgBox {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .socialSec .socialContent {
+    display: block;
+  }
+  .socialSec .socialContent .main {
+    width: 100%;
+  }
+  .socialSec .socialContent .main .mainContent .box {
+    display: block;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxLeft {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxRight {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxRight .itemBox {
+    padding: 0 !important;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxRight .itemBox .imgBox {
+    width: 100%;
+  }
+  .socialSec
+    .socialContent
+    .main
+    .mainContent
+    .box
+    .boxRight
+    .itemBox
+    .textBox
+    h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .socialSec .socialContent .sidebar {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 40px !important;
+  }
+  .socialSec .socialContent .main .mainContent .box .boxLeft ul li i {
+    position: relative;
+    padding-left: 20px;
+  }
+  .mapSec .mapContent {
+    width: 90%;
+  }
+  .contactUsSec .contactContent {
+    display: block;
+  }
+  .contactUsSec .contactContent .contactInfo {
+    width: 100%;
+  }
+  .contactUsSec .contactContent .contactForm {
+    width: 100%;
+  }
+  .contactUsSec .contactContent .contactMessage {
+    width: 100%;
+  }
+  .contactUsSec .contactContent .contactForm {
+    padding: 0 !important;
+  }
+  .contactUsSec .contactContent .contactMessage {
+    padding: 0 !important;
+  }
+}
+/* -------------end Responsive---------- */
